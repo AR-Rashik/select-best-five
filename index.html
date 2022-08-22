@@ -27,7 +27,7 @@
     <!-- Players Section Start -->
     <main>
       <section class="bg-zinc-800">
-        <div class="grid grid-cols-4 gap-4 w-10/12 mx-auto py-10">
+        <div class="grid grid-cols-4 gap-5 container mx-auto py-10">
           <!-- Players selection section -->
           <div class="col-span-3 grid grid-cols-3 gap-4">
             <!-- Player - 1 -->
@@ -152,27 +152,88 @@
             </div>
           </div>
 
-          <!-- Section and Calculation Section -->
-          <div class="flex flex-col">
+          <!-- Section and Budget Section -->
+          <div class="flex flex-col gap-5">
             <!-- Selected Section -->
             <div class="bg-zinc-900 p-8">
-              <h2 class="text-2xl text-slate-50 font-semibold text-center">
+              <h2
+                class="text-2xl text-slate-50 font-semibold text-center mb-1.5"
+              >
                 Selected - V
               </h2>
               <img
-                class="w-4/6 mx-auto"
+                class="w-4/6 mx-auto mb-8"
                 src="images/underline-image.png"
                 alt="underline"
               />
               <ol
-                class="text-slate-50 text-lg mt-8 text-center w-4/6 mx-auto list-decimal"
-              >
-                <li>Lionel Messi</li>
-                <li>Neymar Jr</li>
-                <li>Renato Sanches</li>
-              </ol>
+                class="text-slate-50 text-lg text-center w-4/6 mx-auto list-decimal"
+              ></ol>
             </div>
-            <!-- Calculation Section -->
+            <!-- Budget Section -->
+            <div class="bg-zinc-900 text-center p-10">
+              <h2
+                class="text-2xl text-slate-50 font-semibold text-center mb-1.5"
+              >
+                Budget
+              </h2>
+              <img
+                class="w-4/6 mx-auto mb-8"
+                src="images/underline-image.png"
+                alt="underline"
+              />
+              <div class="flex justify-between items-center mb-6">
+                <label class="text-lg text-zinc-400" for="per-player-price"
+                  >Per Player</label
+                >
+                <input
+                  class="w-1/2 px-4 py-2 bg-zinc-900 border-2 border-slate-50 text-slate-50 text-lg"
+                  type="text"
+                  name=""
+                  id="per-player-price"
+                />
+              </div>
+              <button
+                class="w-full mx-auto py-2 text-lg font-bold bg-blue-800 hover:bg-blue-900 text-slate-50 mb-10"
+              >
+                Calculate
+              </button>
+              <div class="flex justify-between text-lg mb-10">
+                <p class="text-zinc-400">Player Expenses</p>
+                <p class="text-slate-50">$<span>000</span></p>
+              </div>
+              <div class="flex justify-between items-center mb-6">
+                <label class="text-lg text-zinc-400" for="manager-price"
+                  >Manager</label
+                >
+                <input
+                  class="w-1/2 px-4 py-2 bg-zinc-900 border-2 border-slate-50 text-slate-50 text-lg"
+                  type="text"
+                  name=""
+                  id="manager-price"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-6">
+                <label class="text-lg text-zinc-400" for="coach-price"
+                  >Coach</label
+                >
+                <input
+                  class="w-1/2 px-4 py-2 bg-zinc-900 border-2 border-slate-50 text-slate-50 text-lg"
+                  type="text"
+                  name=""
+                  id="coach-price"
+                />
+              </div>
+              <button
+                class="w-full mx-auto py-2 text-lg font-bold bg-blue-800 hover:bg-blue-900 text-slate-50 mb-8"
+              >
+                Calculate Total
+              </button>
+              <div class="flex justify-between text-lg font-bold">
+                <p class="text-zinc-300">Total</p>
+                <p class="text-orange-500">$<span>000</span></p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
