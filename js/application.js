@@ -47,11 +47,8 @@ function display(displayPlayers){
       liTag.innerHTML =`
         ${selectedPlayerName}
       `
-      // const numberOfPlayers = selectedPlayers.childElementCount;
       
       selectedPlayers.appendChild(liTag);
-
-
     }
   }
   else {
