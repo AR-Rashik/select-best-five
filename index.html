@@ -201,13 +201,16 @@
                 />
               </div>
               <button
+                id="btn-calculate"
                 class="w-full mx-auto py-2 text-lg font-bold bg-blue-800 hover:bg-blue-900 text-slate-50 mb-10"
               >
                 Calculate
               </button>
               <div class="flex justify-between text-lg mb-10">
                 <p class="text-zinc-400">Player Expenses</p>
-                <p class="text-slate-50">$<span>000</span></p>
+                <p class="text-slate-50">
+                  $<span id="player-expanses">000</span>
+                </p>
               </div>
               <div class="flex justify-between items-center mb-6">
                 <label class="text-lg text-zinc-400" for="manager-price"
@@ -232,13 +235,16 @@
                 />
               </div>
               <button
+                id="btn-calculate-total"
                 class="w-full mx-auto py-2 text-lg font-bold bg-blue-800 hover:bg-blue-900 text-slate-50 mb-8"
               >
                 Calculate Total
               </button>
               <div class="flex justify-between text-lg font-bold">
                 <p class="text-zinc-300">Total</p>
-                <p class="text-orange-500">$<span>000</span></p>
+                <p class="text-orange-500">
+                  $<span id="total-price">000</span>
+                </p>
               </div>
             </div>
           </div>
